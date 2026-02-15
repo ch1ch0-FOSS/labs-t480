@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "docs",
+  "agent": {
+    "docs": {
+      "description": "Curate Markdown docs for t480 portfolio. No code changes.",
+      "model": "local-llm/your-model",
+      "prompt": "Edit only .md files in repo. Structure: ADRs, runbooks. No bash/git/Beads.",
+      "permission": {
+        "edit": "*.md",
+        "bash": "deny",
+        "glob": "deny"
+      }
+    }
+  }
+}
+

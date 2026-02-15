@@ -1,0 +1,25 @@
+## Architecture Overview
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  nb Interactive Shell (tmux pane)                       │
+│  Fast note capture, search, tagging, linking            │
+└────────────────┬────────────────────────────────────────┘
+                 │
+┌─────────────────────────────────────────────────────────┐
+│  nb Core Engine                                         │
+│  Notebooks / Notes / Bookmarks / Todos / Encryption     │
+└────────────────┬────────────────────────────────────────┘
+                 │
+┌─────────────────────────────────────────────────────────┐
+│  POSIX Toolchain Layer                                  │
+│  vim | git | bash | coreutils | findutils | util-linux  │
+└────────────────┬────────────────────────────────────────┘
+                 │
+┌─────────────────────────────────────────────────────────┐
+│  Optional Enhancement Tools (Rust/C, explicit choices)  │
+│  bat | rg | lsd | tig | pandoc | w3m | imagemagick      │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
